@@ -21,4 +21,7 @@ async function fetchUserData() {
     } catch (error) {
         dataContainer.innerHTML = 'Failed to load user data.';
     }
+
 }
+// Invoke fetchUserData once DOM is loaded
+document.addEventListener('DOMContentLoaded', fetchUserData);
